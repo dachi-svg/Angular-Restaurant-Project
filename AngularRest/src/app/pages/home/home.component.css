@@ -1,13 +1,214 @@
-.content {
-    width: 100%;
-    height: 100vh;
+
+body {
+    background-color: #EFF1FF;
+}
+
+
+
+.page {
+    width: 100px;
+    height: 800px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+   
+}
+
+.sert {
+    position: sticky;
+    top: 100px;
+    left: 55px;
+    box-shadow: 5px 5px 15px 1px rgba(106, 106, 106, 0.347);
+    width: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(25, 150, 223);
+    flex-direction: column;
+    height: 680px;
+    background-color: white;
+    border-radius: 20px;
+    z-index: 0;
 }
 
-.content p {
-    font-size: 50px;
+.products-sec {
+    position: relative;
+    left: 400px;
+    margin-top: 50px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    width: 1500px;
+    height: auto;
+}
+
+.sertinput {
+    padding-left: 5px;
+    width: 65%;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid black;
+    outline: none;
+}
+
+.search-icon {
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #e10f0f;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+}
+
+.search-icon:hover {
+    background-color: #aa39d7;
+}
+
+.search-sert {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.underline {
+    margin-top: 10px;
+    width: 80%;
+    height: 1px;
+    background-color: gray;
+}
+
+.checkbox {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.checkbox-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-input {
+    width: 20px;
+    height: 20px;
+}
+
+.checkbox-div p {
+    font-size: 18px;
+}
+
+.maxminprices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 300px;
+}
+
+.minmaxpricediv {
+    margin-top: 10px;
+}
+
+.sertdiv{
+    width: 100%;
+}
+
+.sertdiv p {
+    width: 155px;
+    position: relative;
+    left: 65px;
+}
+
+.minmaxpricediv p{
+    width: 155px;
+    position: relative;
+    left: 65px;
+}
+
+.checkbox-is {
+    width: 80%;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3em;
+}
+
+.food-card {
+  transition: 0.18s all;
+  background: white;
+  width: 300px;
+  min-height: 350px;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 2em;
+  > img {
+    transition: 0.18s all;
+    width: 250px;
+    margin-top: -8rem;
+  }
+  > h2 {
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+  }
+  &:hover {
+    transform: rotate(4deg) scale(1.2);
+    > img {
+      transform: rotate(12deg) scale(1.1);
+    }
+  }
+  button {
+    background: #d63b2f;
+    border-radius: 1em;
+    color: #fff;
+    border: 0;
+    padding: 1em;
+    font-size: 1em;
+    margin-bottom: 1em;
+    margin-top: -1em;
+    cursor: pointer;
+    position: relative;
+    z-index: 11111;
+    transition: 0.18s all;
+    &:hover {
+      cursor: pointer;
+      background: lighten(#d63b2f, 15%);
+      padding-left: 2em;
+      padding-right: 2em;
+    }
+  }
+  .description {
+    color: lighten(black, 10%);
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .price {
+    font-size: 2em;
     font-weight: bold;
+    color: #d63b2f;
+  }
 }
