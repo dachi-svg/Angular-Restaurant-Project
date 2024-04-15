@@ -6,8 +6,8 @@ body {
 
 
 .page {
-    width: 100px;
-    height: 800px;
+    width: 100%;
+    height: auto;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
@@ -144,12 +144,13 @@ body {
 
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3em;
+  flex-wrap: wrap;
+  gap: 100px;
 }
 
 .food-card {
