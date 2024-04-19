@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodApiService } from '../../Services/food-api.service';
+import { log } from 'console';
 
 @Component({
   selector: 'app-home',
@@ -23,6 +24,26 @@ export class HomeComponent implements OnInit{
     })
   }
 
+  public minprice:any = ""
+  public maxprice:any = ""
+  public pseudoMin:any
+  public pseudoMax:any
+  public name:any = ""
 
+  Filter() {
+    this.GetF.GetAll().subscribe((data:any) => {
+      this.FoodApi = data.filter((res:any) => {
+        if(this.minprice === "" || this.maxprice === "") {
+          this.pseudoMin = 0
+          this.pseudoMax = 100000
+        } else {
+          this.pseudoMax = this.maxprice
+          this.pseudoMin = this.minprice
+        }
+        
+        return this.pseudoMin <= res.price && this.pseudoMax >= res.price && res.name.includes(this.name)
+      })
+    })
+  }
 
 }

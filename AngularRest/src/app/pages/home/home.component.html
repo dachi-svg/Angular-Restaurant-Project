@@ -3,15 +3,15 @@
         <div class="sertdiv">
             <p>Search by name</p>
             <div class="search-sert">
-                <input class="sertinput" type="search" placeholder="Search by name.." id="search-by-name-input">
-                <button id="search-btn" class="search-icon" href=""><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input class="sertinput" type="search" placeholder="Search by name.." id="search-by-name-input" [(ngModel)]="name" >
+                <button id="search-btn" class="search-icon" (click)="Filter()"><i class="fa-solid fa-magnifying-glass"></i></button>
             </div>
         </div>
         <div class="minmaxpricediv">
             <p>Search by Price</p>
             <div class="maxminprices">
-                <input class="sertinput" type="search" placeholder="Min Price.." id="minprice">
-                <input class="sertinput" type="search" placeholder="Max Price.." id="maxprice">
+                <input class="sertinput" type="search" placeholder="Min Price.." id="minprice" [(ngModel)]="minprice">
+                <input class="sertinput" type="search" placeholder="Max Price.." id="maxprice" [(ngModel)]="maxprice">
             </div>
         </div>
         <div class="underline"></div>
@@ -19,7 +19,7 @@
             <div class="checkbox">
                 <div class="checkbox-div">
                     <input class="checkbox-input" type="checkbox">
-                    <p> Salad</p>
+                    <p>Salad</p>
                 </div>
                 <div class="checkbox-div">
                     <input class="checkbox-input" type="checkbox" >
@@ -31,11 +31,11 @@
                 </div>
                 <div class="checkbox-div">
                     <input class="checkbox-input" type="checkbox">
-                    <p> Beed-Dishes</p>
+                    <p>Beed-Dishes</p>
                 </div>
                 <div class="checkbox-div">
                     <input class="checkbox-input" type="checkbox">
-                    <p> See-Food</p>
+                    <p>See-Food</p>
                 </div>
                 <div class="checkbox-div">
                     <input class="checkbox-input" type="checkbox">
