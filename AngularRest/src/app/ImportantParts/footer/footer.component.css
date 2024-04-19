@@ -16,7 +16,7 @@ ul {
 }
 
 .footer {
-  background-image: linear-gradient(to right, red, crimson);
+  background-image: linear-gradient(to right, rgb(144, 73, 73), crimson);
   padding: 70px 0;
 }
 
@@ -79,8 +79,8 @@ ul {
 }
 
 .footer-col .social-links a:hover {
-  color: #24262b;
-  background-color: #ffffff;
+  color: #000000 !important;
+  background-color: #ffffff !important;
 }
 
 
