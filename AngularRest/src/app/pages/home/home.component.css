@@ -182,7 +182,7 @@ body {
     }
   }
   button {
-    background: #d63b2f;
+    background: #000000;
     border-radius: 1em;
     color: #fff;
     border: 0;
@@ -212,4 +212,39 @@ body {
     font-weight: bold;
     color: #d63b2f;
   }
+}
+
+.btn {
+  color: purple;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  background: transparent;
+  position: relative;
+  transition: all 1s;
+  overflow: hidden;
+}
+
+.btn:hover {
+  color: white;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: -40px;
+  transform: skewX(45deg);
+  background-color: rgb(255, 0, 0);
+  z-index: -1;
+  transition: all 1s;
+}
+
+.btn:hover::before {
+  width: 160%;
 }

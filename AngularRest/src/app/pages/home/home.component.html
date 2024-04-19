@@ -49,7 +49,9 @@
     <div class="container">
         <div class="food-card" *ngFor="let item of FoodApi">
           <img src="{{item.image}}" alt="">
-          <button>Add to cart</button>
+          <button class="btn">
+            Add To Cart
+          </button>
           <h2>{{item.name}}</h2>
           <span class="description">Mushroom sauce, lettuce and cheese in a delcious bun</span>
           <span class="price">{{item.price}}<span>$</span></span>
