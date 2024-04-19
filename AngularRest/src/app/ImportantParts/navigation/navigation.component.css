@@ -3,7 +3,14 @@ header {
     background-color: #e74c3c; 
     color: #fff;
     padding: 1rem;
-  }
+    border-radius: 40px;
+    box-shadow: 
+    0 0 20px 0 rgba(255, 0, 0, 0.6),
+    0 0 30px 0 rgba(255, 0, 0, 0.4),
+    0 0 40px 0 rgba(255, 0, 0, 0.2),
+    0 0 50px 0 rgba(255, 0, 0, 0.1),
+    0 0 60px 0 rgba(255, 0, 0, 0.05);
+}
   
   header h1 {
     margin: 0;
