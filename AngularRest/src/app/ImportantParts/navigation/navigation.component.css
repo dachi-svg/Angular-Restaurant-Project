@@ -51,3 +51,12 @@ header {
     background-color: #fff;
     color: #333;
   }
+
+  @media only screen and (max-width: 623px){ 
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  

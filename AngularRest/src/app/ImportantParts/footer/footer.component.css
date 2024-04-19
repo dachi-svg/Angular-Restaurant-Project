@@ -84,14 +84,14 @@ ul {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .footer-col {
     width: 50%;
     margin-bottom: 30px;
   }
 }
 
-@media (max-width: 574px) {
+@media (max-width: 480px) {
   .footer-col {
     width: 100%;
   }
