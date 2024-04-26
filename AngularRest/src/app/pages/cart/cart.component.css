@@ -7,6 +7,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
+    
   }
   th, td {
     border: 1px solid black;
@@ -28,7 +29,13 @@ table {
     background-color: rgb(219, 38, 38);
     border-radius: 10px;
     color: white;
+    transition: 0.2s all ease-in;
   }
+
+  .delete-btn:hover{
+    background-color: black;
+  } 
+
 
   .cart-empty {
     display: flex;
