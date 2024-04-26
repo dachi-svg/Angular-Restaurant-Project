@@ -3,6 +3,16 @@ body {
     background-color: #EFF1FF;
 }
 
+.cards {
+  width: calc(100% - 480px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 50px;
+}
 
 
 .page {
@@ -11,7 +21,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
-    align-items: center;
+    justify-content: end;
    
 }
 
