@@ -4,6 +4,7 @@ body {
 }
 
 .cards {
+  margin-top: 70px;
   width: calc(100% - 480px);
   display: flex;
   align-items: center;
@@ -11,7 +12,7 @@ body {
   height: auto;
   padding: 20px;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 160px;
 }
 
 
