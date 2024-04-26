@@ -46,4 +46,13 @@ export class HomeComponent implements OnInit{
     })
   }
 
+  public pQuantity:any
+
+  addToCarter(item:any) {
+    this.GetF.addToCart({
+      "quantity": this.pQuantity,
+      "price": item.price * this.pQuantity,
+      "productId": item.id
+    }).subscribe()
+  }
 }
