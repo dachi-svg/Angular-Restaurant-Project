@@ -1,0 +1,7 @@
+<h1>{{actRouterdata.name}}</h1>
+<img width="300" [src]="actRouterdata.image" alt="">  <br>
+<p>price: {{actRouterdata.price}}$</p>
+<span>Quantity: </span>
+<input style="width: 40px;" type="number" [(ngModel)]="itemQuantity">
+<br>
+<button (click)="addToCarter()">Add To cart</button>

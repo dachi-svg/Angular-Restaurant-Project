@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodApiService } from '../../Services/food-api.service';
 import { log } from 'console';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +10,7 @@ import { log } from 'console';
 })
 export class HomeComponent implements OnInit{
 
-  constructor(public GetF: FoodApiService) {}
+  constructor(public GetF: FoodApiService, public router: Router) {}
   
   ngOnInit(): void {
     this.GetFood()
@@ -54,5 +55,9 @@ export class HomeComponent implements OnInit{
       "price": item.price * this.pQuantity,
       "productId": item.id
     }).subscribe()
+  }
+
+  gotoDetails(item: any) {
+    this.router.navigate(["/details"], {queryParams: item})
   }
 }

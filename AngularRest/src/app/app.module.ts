@@ -11,6 +11,8 @@ import { FooterComponent } from './ImportantParts/footer/footer.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { ErrorComponent } from './pages/error/error.component';
+import { DetailsComponent } from './pages/home/details/details.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ErrorComponent } from './pages/error/error.component';
     AboutusComponent,
     NavigationComponent,
     FooterComponent,
-    ErrorComponent
+    ErrorComponent,
+    DetailsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
