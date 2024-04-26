@@ -1,4 +1,109 @@
-section {
+* {box-sizing: border-box;}
+
+body {
+  margin: 0; 
+  font-family:'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  background-color: black;
+  color: #fff;
+}
+
+h1 {
+   font-weight: 700;
+   color: #fff;
+   font-size: 1.75rem;
+}
+
+p{
+    font-size: 25px;
+}
+
+h2 {
+   font-weight: 700;
+   color: #000;
+   font-size: 1.75rem;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: minmax(1em, 1fr) minmax(0px, 500px) minmax(1em, 1fr);
+    grid-column-gap: 2em;
+}
+ 
+main {
+  background-color: #fff;
+  color: #000;
+  grid-column: 2 /-2;
+}
+
+  .head {
+  grid-column: 2 / -2;
+  text-align: center;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.page-title {
+  color: #000;
+  font-size: 2.5rem;
+  justify-self: center;
+}
+
+.main-image {
+  grid-column: 2 / -2;
+  object-fit: cover;
+  width: 350px;
+  height: 500px;
+  display: block;
+  box-shadow: 10px 10px 250px #000;
+  max-width: 100%;
+}
+
+.main-text {
+  grid-column: 2 / -2;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  margin-top: 1em;
+  background: red;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sub {
+  margin-top: 3em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* section {
     max-width: 1600px;
     margin: 20px auto;
     height: 600px;
@@ -101,4 +206,4 @@ section{
         margin-bottom: 30px;
         height: 1200px;
     } 
-}
+} */

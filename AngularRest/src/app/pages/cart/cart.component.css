@@ -39,4 +39,9 @@ table {
     height: 100vh;
     margin-top: -80px;
   }
+
+  img{
+    border-radius: 30px;
+    height: 400px;
+  }
   

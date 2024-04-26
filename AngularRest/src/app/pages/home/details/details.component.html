@@ -1,7 +1,10 @@
-<h1>{{actRouterdata.name}}</h1>
-<img width="300" [src]="actRouterdata.image" alt="">  <br>
-<p>price: {{actRouterdata.price}}$</p>
-<span>Quantity: </span>
-<input style="width: 40px;" type="number" [(ngModel)]="itemQuantity">
-<br>
-<button (click)="addToCarter()">Add To cart</button>
+<div class="product-card">
+    <h1 class="product-name">{{actRouterdata.name}}</h1>
+    <img class="product-image" width="300" [src]="actRouterdata.image" alt="">
+    <p class="product-price">price: {{actRouterdata.price}}$</p>
+    <div class="quantity-input">
+      <span class="quantity-label">Quantity:</span>
+      <input class="quantity-input-field" style="width: 40px;" type="number" [(ngModel)]="itemQuantity">
+    </div>
+    <button class="add-to-cart-button" (click)="addToCarter()">Add To cart</button>
+  </div>
