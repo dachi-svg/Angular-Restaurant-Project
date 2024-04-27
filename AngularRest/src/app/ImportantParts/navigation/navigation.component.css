@@ -5,7 +5,6 @@ header {
     background-color: #e74c3c; 
     color: #fff;
     padding: 1rem;
-    
     box-shadow: 
     0 0 20px 0 rgba(255, 0, 0, 0.6),
     0 0 30px 0 rgba(255, 0, 0, 0.4),
@@ -54,7 +53,14 @@ header {
     color: #333;
   }
 
-  @media only screen and (max-width: 623px){ 
+  @media only screen and (max-width: 768px){ 
+    header{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  @media only screen and (max-width: 480px){ 
     header{
       display: flex;
       flex-direction: column;

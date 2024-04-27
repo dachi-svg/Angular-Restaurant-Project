@@ -22,8 +22,7 @@ body {
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
-    justify-content: end;
-   
+    justify-content: end;   
 }
 
 .sert {
@@ -269,4 +268,14 @@ body {
   flex-wrap: wrap;
   width: 100%;
   height: auto;
+}
+
+@media only screen and (max-width: 810px){ 
+ .cards{
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 50px;
+ }
+ 
 }
