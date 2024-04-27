@@ -13,11 +13,11 @@
       <th>Action</th>
     </tr>
     <tr *ngFor="let item of cart">
-      <td>{{item.product.name}} <img width="40px" [src]="item.product.image" alt=""></td>
+      <td>{{item.product.name}} <img class="asdasdasd" [src]="item.product.image" alt=""></td>
       <td>${{item.product.price}}</td>
       <td>{{item.quantity}}</td>
       <td>${{item.price}}</td>
-      <td><button class="delete-btn" (click)="remove(item.product.id)">Remove</button></td>
+      <td><button class="delete-btn" (click)="remove(item.product.id)" (click)="relod()">Remove</button></td>
     </tr>
 </table>
 </section>

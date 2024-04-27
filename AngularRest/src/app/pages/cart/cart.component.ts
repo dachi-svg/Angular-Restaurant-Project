@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FoodApiService } from '../../Services/food-api.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -9,11 +10,9 @@ import { FoodApiService } from '../../Services/food-api.service';
 export class CartComponent implements OnInit{
   ngOnInit(): void {
     this.getAllFoodCart()
-    console.log(this.cart);
-    
   }
 
-  constructor(public api: FoodApiService) {}
+  constructor(public api: FoodApiService, public router: Router) {}
   public cart:any
 
   getAllFoodCart() {
@@ -24,7 +23,12 @@ export class CartComponent implements OnInit{
   }
 
   remove(id:any) {
-    this.api.removeFromCart(id).subscribe()
+    this.api.removeFromCart(id).subscribe() 
+  }
+
+  relod() {
+    window.location.reload();
+    
   }
 
 }
