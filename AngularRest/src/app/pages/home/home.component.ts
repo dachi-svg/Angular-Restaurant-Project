@@ -14,9 +14,11 @@ export class HomeComponent implements OnInit{
   
   ngOnInit(): void {
     this.GetFood()
+    this.getAllCategorise()
   }
 
   public FoodApi:any
+  public allCategories:any
 
   GetFood() {
     this.GetF.GetAll().subscribe(data => {
@@ -59,5 +61,18 @@ export class HomeComponent implements OnInit{
 
   gotoDetails(item: any) {
     this.router.navigate(["/details"], {queryParams: item})
+  }
+
+  getAllCategorise() {
+    this.GetF.getcategorise().subscribe(data => {
+      this.allCategories = data
+    })
+  }
+
+  FilterCategory(id:any) {
+    console.log(123);
+    this.GetF.getCategoryById(id).subscribe((data:any) => {
+      this.FoodApi = data.products
+    })
   }
 }

@@ -14,34 +14,9 @@
                 <input class="sertinput" type="search" placeholder="Max Price.." id="maxprice" [(ngModel)]="maxprice">
             </div>
         </div>
-        <div class="underline"></div>
-        <div class="checkbox-is">
-            <div class="checkbox">
-                <div class="checkbox-div">
-                    <input class="checkbox-input" type="checkbox">
-                    <p>Salad</p>
-                </div>
-                <div class="checkbox-div">
-                    <input class="checkbox-input" type="checkbox" >
-                    <p>Soups</p>
-                </div>
-                <div class="checkbox-div">
-                    <input class="checkbox-input" type="checkbox">
-                    <p> Chicken-Dishesr</p>
-                </div>
-                <div class="checkbox-div">
-                    <input class="checkbox-input" type="checkbox">
-                    <p>Beed-Dishes</p>
-                </div>
-                <div class="checkbox-div">
-                    <input class="checkbox-input" type="checkbox">
-                    <p>See-Food</p>
-                </div>
-                <div class="checkbox-div">
-                    <input class="checkbox-input" type="checkbox">
-                    <p>Vegetable-Dishes</p>
-                </div> 
-            </div>
+        <div class="costum-buttons">
+            <button (click)="GetFood()">all</button>
+            <button *ngFor="let item of allCategories" (click)="FilterCategory(item.id)">{{item.name}}</button>
         </div>
     </div>
     <div class="cards">

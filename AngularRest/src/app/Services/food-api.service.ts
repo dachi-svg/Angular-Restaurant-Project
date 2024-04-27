@@ -23,4 +23,12 @@ export class FoodApiService {
   removeFromCart(id:any) {
     return this.api.delete(`https://restaurant.stepprojects.ge/api/Baskets/DeleteProduct/${id}`)
   }
+
+  getcategorise() {
+    return this.api.get("https://restaurant.stepprojects.ge/api/Categories/GetAll")
+  }
+
+  getCategoryById(id:any) {
+    return this.api.get(`https://restaurant.stepprojects.ge/api/Categories/GetCategory/${id}`)
+  }
 }
